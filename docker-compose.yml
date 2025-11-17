@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     environment:
       NODE_ENV: development
-      DATABASE_CLIENT: better-sqlite3
+      DATABASE_CLIENT: sqlite
       DATABASE_FILENAME: ./data/data.db
       JWT_SECRET: ${JWT_SECRET:-your-jwt-secret-key}
       API_TOKEN_SALT: ${API_TOKEN_SALT:-your-api-token-salt}
